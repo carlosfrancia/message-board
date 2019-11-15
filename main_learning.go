@@ -199,8 +199,6 @@ func main2() {
 	}
 	aNewFile.createFile()
 	aNewFile.writeInFile("My new content")
-	aNewFile.writeInFile("Sandra is a girl")
-	aNewFile.writeInFile("Carlitos is her boyfriend")
 	aNewFile.readFile()
 
 }
