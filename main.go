@@ -38,7 +38,7 @@ func moveRight(board *Board, char rune, moves *[]Move) {
 		}
 	}
 	for i := len(*board) - 1; i > pos; i-- {
-		*board = append([]rune{(*board)[len(*board)-1]}, *board...)
+		*board = append([]rune{(*board)[len(*board)-1]}, *board...)[:len(*board)-1]
 		*board = (*board)[:len(*board)-1]
 	}
 	*board = (*board)[:len(*board)-1]
